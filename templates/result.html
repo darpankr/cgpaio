@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+  <div>
+    <p class="text-center fs-1">CGPA</p>
+  </div>
+</div>
+
+
+<div class="container">
+  <!-- Content here -->
+  <div class="row gy-2 gx-3 align-items-center">
+  <div class="col-md-3">
+
+  </div>
+  <div class="col-md-6">
+    <div>
+        <table class="table table-striped">
+          <thead>
+            <tr class="table-dark">
+              <th scope="col"></th>
+              <th scope="col">Code</th>
+              <th scope="col">Subject</th>
+              <th scope="col">Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>18MAT31</td>
+              <td>MATH</td>
+              <td>{{s1}}</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>18CS32</td>
+              <td>DSA</td>
+              <td>{{s2}}</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>18CS33</td>
+              <td>ADE</td>
+              <td>{{s3}}</td>
+            </tr>
+          <tr>
+              <th scope="row">4</th>
+              <td>18CS34</td>
+              <td>CO</td>
+              <td>{{s4}}</td>
+            </tr>
+          <tr>
+              <th scope="row">5</th>
+              <td>18CS35</td>
+              <td>SE</td>
+              <td>{{s5}}</td>
+            </tr>
+          <tr>
+              <th scope="row">6</th>
+              <td>18CS36</td>
+              <td>DMS</td>
+              <td>{{s6}}</td>
+            </tr>
+          <tr>
+              <th scope="row">7</th>
+              <td>18CS37</td>
+              <td>ADEL</td>
+              <td>{{s7}}</td>
+            </tr>
+          <tr>
+              <th scope="row">8</th>
+              <td>18CS38</td>
+              <td>DSAL</td>
+              <td>{{s8}}</td>
+            </tr>
+          <tr>
+              <th scope="row">9</th>
+              <td>18CS39</td>
+              <td>CIP</td>
+              <td>{{s9}}</td>
+            </tr>
+          <tr class="table-dark">
+              <th scope="row"></th>
+              <td>{{ res }}</td>
+              <td></td>
+              <td>{{cg}}</td>
+
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</div>
+<div class="col-md-3">
+
+  </div>
+</div>
+</div>
+
+
+{% endblock %}

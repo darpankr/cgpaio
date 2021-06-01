@@ -1,0 +1,68 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container">
+  <div>
+    <p class="text-center fs-1">CGPA</p>
+  </div>
+</div>
+
+
+<div class="container">
+  <!-- Content here -->
+  <div class="row gy-2 gx-3 align-items-center">
+  <div class="col-md-4">
+
+  </div>
+  <div class="col-md-4">
+    <form action="calculate" method="post">
+      {% csrf_token %}
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">18CS31</span>
+        <input for="validationDefault01" type="text" class="form-control" name="math" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="MATH">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">18CS32</span>
+        <input for="validationDefault02" type="text" class="form-control" name="dsa" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="DSA">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">18CS33</span>
+        <input for="validationDefault03" type="text" class="form-control" name="ade" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="ADE">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">18CS34</span>
+        <input for="validationDefault04" type="text" class="form-control" name="co" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="CO">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">18CS35</span>
+        <input for="validationDefault05" type="text" class="form-control" name="se" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="SE">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">18CS36</span>
+        <input for="validationDefault06" type="text" class="form-control" name="dms" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="DMS">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">18CS37</span>
+        <input for="validationDefault07" type="text" class="form-control" name="adel" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="ADEL">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">18CS38</span>
+        <input for="validationDefault08" type="text" class="form-control" name="dsal" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="DSAL">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default">18CS39</span>
+        <input for="validationDefault09" type="text" class="form-control" name="cip" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="CIP">
+      </div>
+      <input type="submit" class="btn btn-dark"></input>
+    </form>
+</div>
+<div class="col-md-4">
+
+  </div>
+</div>
+</div>
+
+{% endblock %}
